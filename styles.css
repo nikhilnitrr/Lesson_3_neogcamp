@@ -5,6 +5,7 @@
 :root {
   --primary-color: #6ee7b7;
   --hero-heading-color: blue;
+  --off-white: #f3f4f6;
 }
 
 /* typography */
@@ -98,4 +99,18 @@ hr {
 .hero .hero-heading {
   text-align: center;
   color: var(--hero-heading-color);
+}
+
+/* section */
+
+.section {
+  padding: 2rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
 }
