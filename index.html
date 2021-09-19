@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>My Component Library</title>
   </head>
   <body>
@@ -23,43 +24,49 @@
       >This is relatively smaller text, this is free flowing and will wrap at
       the end like a paragraph</small
     >
+    <p>This paragraph will have<strong> bold tag</strong></p>
 
     <hr />
 
     <h2>@Containers</h2>
 
     <h3>Fluid Container</h3>
-    <div>This is fluid container and it will go till the end of the page</div>
+    <div class="container">
+      This is fluid container and it will go till the end of the page
+    </div>
     <h3>Centered Container</h3>
-    <div>This is centered container and it will go to the specified width</div>
+    <div class="container container-center">
+      This is centered container and it will go to the specified width
+    </div>
 
     <hr />
 
     <h2>@Links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link primary-link" href="/">Primary Link</a>
+    <a class="link secondary-link" href="/">Secondary Link</a>
 
     <hr />
 
     <h2>@Lists</h2>
 
     <h3>Unordered List</h3>
-    <ul>
+    <p>This list will not have bullet</p>
+    <ul class="list-non-bullet">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
     </ul>
 
-    <h3>Ordered List</h3>
-    <ol>
-      <li>Inline Item 1</li>
-      <li>Inline Item 2</li>
-      <li>Inline Item 3</li>
-    </ol>
+    <h3>Unordered inline List</h3>
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Inline Item One</li>
+      <li class="list-item-inline">Inline Item Two</li>
+      <li class="list-item-inline">Inline Item Three</li>
+    </ul>
 
     <h3>Reverse ordered List</h3>
-    <ol>
+    <ol reversed>
       <li>Milk</li>
       <li>Eggs</li>
       <li>Tea</li>
@@ -69,17 +76,17 @@
 
     <h2>@Nav</h2>
 
-    <nav>
-      <div>I am Brand Name</div>
-      <ul>
-        <li>
-          <a href="/">Home</a>
+    <nav class="navigation container">
+      <div class="nav-brand">I am Brand Name</div>
+      <ul class="list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="/">Home</a>
         </li>
-        <li>
-          <a href="/">Projects</a>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/">Projects</a>
         </li>
-        <li>
-          <a href="/">Blogs</a>
+        <li class="list-item-inline">
+          <a class="link" href="/">Blogs</a>
         </li>
       </ul>
     </nav>
