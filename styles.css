@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #6ee7b7;
+  --hero-heading-color: blue;
 }
 
 /* typography */
@@ -80,4 +81,21 @@ hr {
 
 .navigation .link-active {
   font-weight: bold;
+}
+
+/* header */
+
+.hero {
+  padding: 2rem;
+}
+
+.hero .hero-image {
+  max-width: 350px;
+  margin: auto;
+  display: block;
+}
+
+.hero .hero-heading {
+  text-align: center;
+  color: var(--hero-heading-color);
 }
